@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">TokenGenerator</string>
+    <string name="welcome_text">Welcome to My App</string>
+    <string name="enter_data">Please, enter your Name \n and Surname and click Next.</string>
+    <string name="enter_name">Enter your Name</string>
+    <string name="enter_surname">Enter your Surname</string>
+    <string name="next">NEXT</string>
+    <string name="welcome_name_surname">Welcome, !</string>
+    <string name="authenticate">Sorry, you\'ll need to authenticate \n before proceeding.</string>
+    <string name="are_you_authenticated">Are you authenticated?</string>
+    <string name="iam">I AM</string>
+    <string name="iamnot">I AM NOT</string>
+    <string name="tokens">Generated Tokens</string>
 </resources>
