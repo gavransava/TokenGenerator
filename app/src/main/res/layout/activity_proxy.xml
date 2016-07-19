@@ -28,7 +28,8 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/welcome_name_surname"
                 android:id="@+id/textView3"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -50,7 +51,8 @@
             android:id="@+id/button2"
             android:layout_gravity="center_horizontal"
             android:layout_centerHorizontal="true"
-            android:backgroundTint="@color/buttonColor"/>
+            android:backgroundTint="@color/buttonColor"
+            android:onClick="goToActivationScreen"/>
 
     </RelativeLayout>
 </RelativeLayout>

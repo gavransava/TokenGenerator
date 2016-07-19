@@ -76,6 +76,7 @@
             android:id="@+id/button"
             android:layout_gravity="center_horizontal"
             android:layout_centerHorizontal="true"
-            android:backgroundTint="@color/buttonColor" />
+            android:backgroundTint="@color/buttonColor"
+            android:onClick="goToWelcomeScreen"/>
     </RelativeLayout>
 </RelativeLayout>
