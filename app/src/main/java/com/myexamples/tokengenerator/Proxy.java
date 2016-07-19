@@ -30,6 +30,7 @@ public class Proxy extends AppCompatActivity {
         WelcomeText.setText(fullWelcome);
     }
 
+    // Add name and surname to welcome text
     private String getFullWelcome()
     {
         Intent intent = getIntent();
@@ -48,8 +49,6 @@ public class Proxy extends AppCompatActivity {
         Random gen = new Random();
         return gen.nextInt(tokenNumber);
     }
-
-
 
     public void goToActivationScreen(View view)
     {
