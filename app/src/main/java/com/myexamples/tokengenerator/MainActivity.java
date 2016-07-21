@@ -1,6 +1,7 @@
 package com.myexamples.tokengenerator;
 
 import android.content.Intent;
+import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,7 +15,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN);
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB)
+            getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
         handleEditTextFocus();
     }
@@ -36,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
                 if (!hasFocus) {
-                    if (et.getText().toString().isEmpty())
+                    if (et.getText().toString().equals(""))
                         et.setText(R.string.enter_name);
                 } else {
                     et.setText("");
@@ -48,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
                 if (!hasFocus) {
-                    if (et2.getText().toString().isEmpty())
+                    if (et2.getText().toString().equals(""))
                         et2.setText(R.string.enter_surname);
                 } else {
                     et2.setText("");
